@@ -1,0 +1,125 @@
+/* Header section */
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--primary-color);
+	height: 9.6rem;
+	padding: 0 4.8rem;
+	position: relative;
+}
+
+.logo {
+	height: 3.5rem;
+	filter: invert();
+}
+
+/* Navbar */
+.main-nav-list {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+	display: inline-block;
+	text-decoration: none;
+	color: var(--accent-color);
+	font-weight: 500;
+	font-size: 1.8rem;
+
+	transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:visited {
+	color: var(--secondary-color);
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+	padding: 1.2rem 2.4rem;
+	border-radius: 9px;
+	color: var(--accent-color);
+	background-color: var(--secondary-color);
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:visited {
+	background-color: var(--accent-color);
+	color: var(--secondary-color);
+}
+
+/* Hero Section */
+.hero-section {
+	background-color: var(--accent-color);
+	padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+	max-width: 130rem;
+	margin: 0 auto;
+	padding: 0 3.2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 9.6rem;
+	align-items: center;
+}
+
+.hero-text {
+	font-size: 2rem;
+	line-height: 1.5;
+	margin-bottom: 4.8rem;
+}
+
+.hero-content a {
+	text-decoration: none;
+}
+
+.hero {
+	width: 100%;
+}
+
+/* Newsletter */
+.newsletter-section {
+	background-color: var(--secondary-color);
+	color: var(--accent-color);
+	padding: 4.8rem 0 9.6rem 0;
+}
+
+.newsletter {
+	max-width: 130rem;
+	margin: 0 auto;
+	padding: 0 3.2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.newsletter h2 {
+	font-size: 3.2rem;
+	margin-bottom: 1.6rem;
+}
+
+.newsletter-input input {
+	padding: 1.2rem 2.4rem;
+	border: none;
+	border-radius: 1rem 0 0 1rem;
+	background-color: var(--accent-color);
+	color: var(--secondary-color);
+	font-size: 1.8rem;
+}
+
+#sub-btn {
+	color: var(--accent-color);
+	background-color: var(--primary-color);
+	border-radius: 0 1rem 1rem 0;
+}
+
+#sub-btn:hover {
+	background-color: var(--accent-color);
+	color: var(--secondary-color);
+}

@@ -1,0 +1,66 @@
+/* Define a root variable for primary color */
+:root {
+	--primary-color: #261b04;
+	--secondary-color: #f1592a;
+	--accent-color: #feeeea;
+	--white-color: #fff;
+	--default-black: #040300;
+}
+
+/* Global resets */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+	font-family: "Montserrat", sans-serif;
+	font-family: "Noto Sans", sans-serif;
+	line-height: 1.1;
+	font-weight: 400;
+	color: var(--default-black);
+	overflow-x: hidden;
+}
+
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+}
+
+.container {
+	max-width: 720px;
+}
+
+/* Heading Styles */
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+	font-weight: 700;
+	color: #333;
+	letter-spacing: -0.5px;
+}
+
+.heading-primary {
+	font-size: 5.2rem;
+	line-height: 1.1;
+	margin-bottom: 3.2rem;
+}
+
+/* Button Styles */
+.btn-primary {
+	font-size: 1.8rem;
+	font-weight: 400;
+	padding: 1.2rem 2.4rem;
+	border: none;
+	border-radius: 1rem;
+	color: var(--accent-color);
+	background-color: var(--primary-color);
+
+	transition: all 0.3s;
+}
+
+.btn-primary:hover {
+	background-color: var(--secondary-color);
+}
