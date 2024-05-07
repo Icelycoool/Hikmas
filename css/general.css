@@ -5,6 +5,7 @@
 	--accent-color: #feeeea;
 	--tertiary-accent-color: #e7e5e4;
 	--white-color: #fff;
+	--shadow-color: rgba(0, 0, 0, 0.075);
 	--default-black: #040300;
 }
 
@@ -108,4 +109,23 @@ a.btn {
 	border: solid 2px var(--secondary-color);
 	background-color: var(--secondary-color);
 	color: var(--accent-color);
+}
+
+/* Grids */
+.grid {
+	display: grid;
+	column-gap: 3.2rem;
+	row-gap: 9.6rem;
+}
+
+.grid-2-cols {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-cols {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-cols {
+	grid-template-columns: repeat(4, 1fr);
 }
