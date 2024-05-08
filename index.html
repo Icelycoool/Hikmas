@@ -8,6 +8,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/general.css" />
+		<script defer src="js/script.js"></script>
 		<title>Hikmas Wallet</title>
 	</head>
 	<body>
@@ -53,19 +54,18 @@
 		</section>
 
 		<!-- Newsletter -->
-		<section>
-			<section class="newsletter-section">
-				<div class="newsletter">
-					<div class="newsletter-content">
-						<h2>Subscribe to our news letter!</h2>
-						<p class="hero-text">Get the latest features and updates</p>
-					</div>
-					<div class="newsletter-input">
-						<input type="text" placeholder="Enter your email" />
-						<button class="btn-primary" id="sub-btn">Subscribe</button>
-					</div>
+
+		<section class="newsletter-section">
+			<div class="newsletter">
+				<div class="newsletter-content">
+					<h2>Subscribe to our news letter!</h2>
+					<p class="hero-text">Get the latest features and updates</p>
 				</div>
-			</section>
+				<div class="newsletter-input">
+					<input type="text" placeholder="Enter your email" />
+					<button class="btn-primary" id="sub-btn">Subscribe</button>
+				</div>
+			</div>
 		</section>
 
 		<!-- About Section -->
@@ -197,6 +197,7 @@
 							<li class="card-list-item hidden"><ion-icon name="checkmark-circle-outline"></ion-icon></li>
 							<li class="card-list-item hidden"><ion-icon name="checkmark-circle-outline"></ion-icon></li>
 						</ul>
+
 						<p class="card-price">$<span>19.99</span>/month</p>
 						<a href="#" class="btn-primary">Learn more</a>
 					</div>
@@ -225,7 +226,42 @@
 		</section>
 
 		<!-- Reviews Section -->
-		<section class="reviews-section"></section>
+		<section class="reviews-section">
+			<h2 class="heading-secondary centered-heading">What our customers are saying</h2>
+			<p class="description-text">Read what our satisfied customers have to say about their experiences with Hikmas Wallet</p>
+			<div class="reviews">
+				<div>
+					<img src="img/Holding-Hand-Smart-Phone-Mockup.png" alt="" class="reviews-section-img" />
+				</div>
+				<div class="reviews-content grid grid-2-cols"></div>
+			</div>
+		</section>
+
+		<!-- Contact Section -->
+		<section class="contact-section">
+			<div class="contact">
+				<div class="contact-form">
+					<h2 class="contact-title">Have a question?</h2>
+					<p class="contact-text">Get in touch with our team now and get you questions answered!</p>
+					<hr />
+					<label for="name">Full Name:</label>
+					<input type="text" name="name" id="name" />
+
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" />
+
+					<label for="message">Message:</label>
+					<textarea name="message" id="message" cols="30" rows="5"></textarea>
+
+					<button class="btn-primary">Send Message</button>
+				</div>
+				<div class="location">
+					<iframe
+						src="https://visitedplaces.com/embed/?map=kenya&projection=geoMercator&theme=dark-green&water=1&graticule=1&names=1&duration=2000&placeduration=100&slider=0&autoplay=0&autozoom=none&autostep=0&home=KE"
+						class="map"></iframe>
+				</div>
+			</div>
+		</section>
 
 		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

@@ -228,6 +228,7 @@
 .pricing-card img {
 	position: absolute;
 	margin-bottom: -6.4rem;
+	filter: drop-shadow(2px 2px 2px rgb(134, 134, 134));
 	transform: translateY(-50%) translateX(-50%);
 
 	width: 100%;
@@ -273,7 +274,107 @@
 	visibility: hidden;
 }
 
-/* CTA Section */
-.cta-img img {
+/* Reviews Section */
+.reviews-section {
+	padding: 4.8rem 0 9.6rem 0;
+	margin-bottom: 9.6rem;
+}
+
+.reviews-section h2,
+.description-text {
+	margin-bottom: 3.2rem;
+	text-align: center;
+}
+
+.reviews {
+	max-width: 130rem;
+	height: 50rem;
+	margin: 0 auto;
+	padding: 0 3.2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 5.2rem;
+	align-items: center;
+}
+
+.reviews-section-img {
+	filter: brightness(0.8);
 	width: 100%;
+}
+
+.reviews-content.grid {
+	row-gap: 2.4rem;
+}
+
+.review-img {
+	height: 4.2rem;
+	width: 4.2rem;
+	border-radius: 50%;
+	margin-bottom: 2.4rem;
+}
+
+.review-text {
+	font-size: 1.4rem;
+	line-height: 2rem;
+	margin-bottom: 1.8rem;
+}
+
+.review-name {
+	margin-top: 0.8rem;
+	font-size: 1.4rem;
+	font-weight: 700;
+	color: var(--secondary-color);
+}
+
+/* Contact Section */
+.contact-section {
+	padding: 4.8rem 0 9.6rem 0;
+	text-align: center;
+}
+
+.contact {
+	max-width: 130rem;
+	height: 50rem;
+	margin: 0 auto;
+	padding: 0 3.2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 5.2rem;
+	align-items: center;
+}
+
+.contact-form {
+	display: flex;
+	gap: 1.8rem;
+	flex-direction: column;
+	padding: 1.8rem;
+}
+
+.contact-title {
+	font-size: 2.4rem;
+	color: var(--secondary-color);
+	margin-bottom: 1rem;
+}
+
+.contact-text,
+label {
+	font-size: 1.8rem;
+	text-align: left;
+}
+
+input,
+textarea {
+	padding: 1.2rem 2.4rem;
+	border: none;
+	border-radius: 1rem;
+	border: 0.2rem solid var(--primary-color);
+	font-size: 1.8rem;
+}
+
+.map {
+	width: 45rem;
+	height: 55rem;
+	width: 100%;
+	background-color: var(--secondary-color);
+	border: none;
 }
