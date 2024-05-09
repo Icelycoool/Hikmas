@@ -6,6 +6,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+		<link rel="shortcut icon" href="img/browser_web.png" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/general.css" />
 		<script defer src="js/script.js"></script>
@@ -13,7 +14,7 @@
 	</head>
 	<body>
 		<!-- Navigation Section -->
-		<header class="header">
+		<header class="header" id="nav">
 			<a href="#"><img class="logo" src="img/logo.png" alt="Logo of Hikmas Wallet" /></a>
 
 			<nav class="main-nav">
@@ -22,13 +23,13 @@
 						<a href="#" class="main-nav-link">Home</a>
 					</li>
 					<li>
-						<a href="#" class="main-nav-link">About</a>
+						<a href="#about" class="main-nav-link">About</a>
 					</li>
 					<li>
-						<a href="#" class="main-nav-link">Features</a>
+						<a href="#features" class="main-nav-link">Features</a>
 					</li>
 					<li>
-						<a href="#" class="main-nav-link">Pricing</a>
+						<a href="#pricing" class="main-nav-link">Pricing</a>
 					</li>
 					<li>
 						<a href="#" class="main-nav-link nav-cta">Try Now</a>
@@ -69,12 +70,13 @@
 		</section>
 
 		<!-- About Section -->
-		<section class="about-section">
+		<section class="about-section" id="about">
 			<div class="about">
 				<h2 class="heading-secondary">Why Choose Hikmas Wallet?</h2>
 				<p class="description-text">
-					Unlock the potential of global currency management with Hikmas Wallet - your gateway to seamless, stylish, secure and premium financial experiences. Say goodbye to borders, and hello to a
-					world where managing multiple currencies is as easy as a swipe.
+					At Hikmas Wallet, we're revolutionizing the global financial landscape, empowering you to take charge of your finances like never before. Gone are the days of grappling with the complexities
+					of multiple currencies – with our innovative solutions, managing your money becomes a seamless and intuitive experience. Join us as we redefine the way you manage your money – join Hikmas
+					Wallet today and embark on a journey towards financial freedom, simplicity, and empowerment.
 				</p>
 				<div class="about-list">
 					<div class="about-list-item">
@@ -98,7 +100,7 @@
 		</section>
 
 		<!-- Features Section -->
-		<section class="features-section">
+		<section class="features-section" id="features">
 			<h2 class="heading-secondary" id="centered-heading">What's Inside Your Hikmas Wallet</h2>
 			<div class="features">
 				<!-- First Feature -->
@@ -108,12 +110,12 @@
 					<p class="description-text">Your Hikmas Wallet debit card knows no boundaries. Shop everywhere and withdraw cash internationally without worrying about currency conversion hassles.</p>
 				</div>
 				<div>
-					<img class="features-img" src="img/global_acceptance.jpg" alt="" />
+					<img class="features-img" src="img/global_acceptance.jpg" alt="An illustration Showing Global Acceptance" />
 				</div>
 
 				<!-- Second Feature -->
 				<div>
-					<img class="features-img" src="img/rewards.jpg" alt="" />
+					<img class="features-img" src="img/rewards.jpg" alt="An Illustration of rewards" />
 				</div>
 				<div class="features-content">
 					<h2 class="heading-secondary"><span class="features-number">02</span></h2>
@@ -132,19 +134,19 @@
 					</p>
 				</div>
 				<div>
-					<img class="features-img" src="img/security.jpg" alt="" />
+					<img class="features-img" src="img/security.jpg" alt="An Illustration showing security" />
 				</div>
 			</div>
 		</section>
 
 		<!-- Pricing Section -->
-		<section class="pricing-section">
+		<section class="pricing-section" id="pricing">
 			<h2 class="heading-secondary" id="centered-heading">Our Packages</h2>
 			<p class="description-text">Choose from any of our four packages without breaking bank today!</p>
 			<div class="grid grid-4-cols pricing">
 				<!-- First Card -->
 				<div class="pricing-card">
-					<img id="card-img" src="img/Bronze.png" alt="" />
+					<img id="card-img" src="img/Bronze.png" alt="Bronze Package Card" />
 					<div class="card-content">
 						<h4 class="card-heading">Bronze</h4>
 						<ul class="card-list">
@@ -164,7 +166,7 @@
 
 				<!-- Second Card -->
 				<div class="pricing-card">
-					<img src="img/Silver.png" alt="" />
+					<img src="img/Silver.png" alt="Silver Package Card" />
 					<div class="card-content">
 						<h4 class="card-heading">Silver</h4>
 						<ul class="card-list">
@@ -184,7 +186,7 @@
 
 				<!-- Third Card -->
 				<div class="pricing-card">
-					<img src="img/Gold.png" alt="" />
+					<img src="img/Gold.png" alt="Gold Package Card" />
 					<div class="card-content">
 						<h4 class="card-heading">Gold</h4>
 						<ul class="card-list">
@@ -205,7 +207,7 @@
 
 				<!-- Fourth Card -->
 				<div class="pricing-card">
-					<img src="img/Diamond.png" alt="" />
+					<img src="img/Diamond.png" alt="Diamond Package Card" />
 					<div class="card-content">
 						<h4 class="card-heading">Diamond</h4>
 						<ul class="card-list">
@@ -231,7 +233,7 @@
 			<p class="description-text">Read what our satisfied customers have to say about their experiences with Hikmas Wallet</p>
 			<div class="reviews">
 				<div>
-					<img src="img/Holding-Hand-Smart-Phone-Mockup.png" alt="" class="reviews-section-img" />
+					<img src="img/Holding-Hand-Smart-Phone-Mockup.png" alt="Person using Hikmas Wallet app" class="reviews-section-img" />
 				</div>
 				<div class="reviews-content grid grid-2-cols"></div>
 			</div>
@@ -255,13 +257,102 @@
 
 					<button class="btn-primary">Send Message</button>
 				</div>
-				<div class="location">
-					<iframe
-						src="https://visitedplaces.com/embed/?map=kenya&projection=geoMercator&theme=dark-green&water=1&graticule=1&names=1&duration=2000&placeduration=100&slider=0&autoplay=0&autozoom=none&autostep=0&home=KE"
-						class="map"></iframe>
+				<div class="contact-img">
+					<img src="img/support.jpg" alt="Customer support center" class="map" />
 				</div>
 			</div>
 		</section>
+
+		<!-- Footer Section -->
+		<footer class="footer">
+			<div class="container grid grid-footer">
+				<!-- Logo column -->
+				<div class="logo-col">
+					<a href="#nav" class="footer-logo">
+						<img class="logo" src="img/logo.png" alt="Hikmas Wallet logo" />
+					</a>
+
+					<ul class="social-links">
+						<li>
+							<a class="footer-link" href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+						</li>
+						<li>
+							<a class="footer-link" href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+						</li>
+						<li>
+							<a class="footer-link" href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+						</li>
+					</ul>
+					<p class="copyright">Copyright &copy; 2024. All rights reserved.</p>
+				</div>
+
+				<!-- Address column -->
+				<div class="address-col">
+					<p class="footer-heading">Contact us</p>
+					<address class="contacts">
+						<p class="address">Dhasheeg Plaza, 2nd Floor, 6th Street, Eastleigh, Nairobi</p>
+						<p>
+							<a class="footer-link" href="tel:0720-123-637">0720-123-637</a><br />
+							<a class="footer-link" href="mailto:info@hikmas.com">info@hikmas.com</a>
+						</p>
+					</address>
+				</div>
+
+				<!-- Nav 1 -->
+				<nav class="nav-col">
+					<p class="footer-heading">Accounts</p>
+					<ul class="footer-nav">
+						<li>
+							<a class="footer-link" href="#">Create account</a>
+						</li>
+						<li>
+							<a class="footer-link" href="#">Sign in</a>
+						</li>
+						<li>
+							<a class="footer-link" href="#">iOS app</a>
+						</li>
+						<li>
+							<a class="footer-link" href="#">Android app</a>
+						</li>
+					</ul>
+				</nav>
+
+				<!-- Nav 2 -->
+				<nav class="nav-col">
+					<p class="footer-heading">Company</p>
+					<ul class="footer-nav">
+						<li>
+							<a class="footer-link" href="#">About Hikmas Wallet</a>
+						</li>
+						<li>
+							<a class="footer-link" href="#">For Business</a>
+						</li>
+						<li>
+							<a class="footer-link" href="#">Our partners</a>
+						</li>
+						<li>
+							<a class="footer-link" href="#">Careers</a>
+						</li>
+					</ul>
+				</nav>
+
+				<!-- Nav 3 -->
+				<nav class="nav-col">
+					<p class="footer-heading">Resources</p>
+					<ul class="footer-nav">
+						<li>
+							<a class="footer-link" href="#">Report Fraud</a>
+						</li>
+						<li>
+							<a class="footer-link" href="#">Help center</a>
+						</li>
+						<li>
+							<a class="footer-link" href="#">Privacy & terms</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
 
 		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
